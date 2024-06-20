@@ -1,0 +1,42 @@
+.wrapper {
+	display: flex;
+	gap: 2rem;
+	height: 300px;
+	padding: 1rem;
+	box-shadow: var(--shadow-sm);
+	border-radius: var(--radius-sm);
+}
+
+.cardImg {
+	border-radius: var(--radius-sm);
+}
+
+.cardBody {
+	display: flex;
+	flex-direction: column;
+}
+
+.cardTitle {
+	font-size: var(--title-3);
+	margin: 1rem 0 0 0;
+}
+
+.cardText {
+	font-size: var(--text-sm);
+	margin: 1rem 0;
+	font-weight: 500;
+}
+
+.textMuted {
+	color: var(--color-gray);
+	margin: 1rem 0;
+	font-weight: 500;
+	margin-bottom: auto;
+}
+
+.link {
+	font-size: var(--text-sm);
+	margin-bottom: 1rem;
+	font-weight: 500;
+	color: #8f8f1a;
+}

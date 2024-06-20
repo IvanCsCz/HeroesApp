@@ -1,8 +1,10 @@
-const MarvelPage = p => {
+import HeroList from '../components/HeroList';
+
+const MarvelPage = () => {
 	return (
-		<div>
-			<h1>MarvelPage</h1>
-		</div>
+		<>
+			<HeroList publisher={'Marvel Comics'} />
+		</>
 	);
 };
 

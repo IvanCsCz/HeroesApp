@@ -1,7 +1,15 @@
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import style from './Navbar.module.css';
 
 const Navbar = () => {
+	const navigate = useNavigate();
+
+	const handleLogout = () => {
+		navigate('/login', {
+			replace: true
+		});
+	};
+
 	return (
 		<nav className={style.navbar}>
 			<Link className={style.homeLink} to='/'>
@@ -26,7 +34,9 @@ const Navbar = () => {
 
 			<div>
 				<span className={style.userName}>Ivan</span>
-				<button className={style.logoutBtn}>Logout</button>
+				<button onClick={handleLogout} className={style.logoutBtn}>
+					Logout
+				</button>
 			</div>
 		</nav>
 	);

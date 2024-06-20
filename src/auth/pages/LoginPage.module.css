@@ -1,0 +1,19 @@
+.wrapper {
+	width: 100%;
+	max-width: 700px;
+	margin: auto;
+	padding: 1rem;
+}
+
+.loginBtn {
+	border: none;
+	background-color: var(--color-black);
+	padding: 0.75rem 1rem;
+	border-radius: var(--radius-sm);
+	color: var(--color-white);
+}
+
+.loginBtn:hover {
+	outline: 1px solid var(--color-white);
+	border-radius: var(--radius-sm);
+}
