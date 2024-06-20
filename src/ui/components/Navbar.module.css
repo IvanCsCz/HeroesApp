@@ -1,0 +1,48 @@
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	height: 5rem;
+	padding: 0.5rem 5%;
+	background-color: var(--color-black);
+}
+
+a {
+	font-weight: 500;
+	color: var(--color-gray);
+	text-decoration: none;
+}
+
+.links {
+	margin-right: auto;
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.active {
+	border-radius: var(--radius-sm);
+	color: var(--color-white);
+}
+
+.homeLink {
+	margin-right: 2rem;
+	color: var(--color-white);
+}
+
+.userName {
+	margin-right: 0.5rem;
+	color: #d7d726;
+}
+
+.logoutBtn {
+	all: unset;
+	padding: 0.75rem 1rem;
+	border-radius: var(--radius-sm);
+	color: var(--color-white);
+}
+
+.logoutBtn:focus {
+	outline: 1px solid var(--color-white);
+	border-radius: var(--radius-sm);
+}
