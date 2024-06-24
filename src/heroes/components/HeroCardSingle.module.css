@@ -1,0 +1,41 @@
+.wrapper {
+	display: flex;
+	gap: 2rem;
+	height: 650px;
+	max-width: 900px;
+
+	animation: bounce; /* referring directly to the animation's @keyframe declaration */
+	animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.cardImg {
+	padding: 0.5rem;
+	box-shadow: var(--shadow-sm);
+	border-radius: var(--radius-sm);
+}
+
+.cardBody {
+	display: flex;
+	flex-direction: column;
+}
+
+.cardTitle {
+	font-size: var(--title-2);
+	margin: 1rem 0 1.5rem 0;
+}
+
+.cardText {
+	font-size: var(--text-sm);
+	padding-left: 1rem;
+	font-weight: 500;
+}
+
+.cardTextCharacterList {
+	margin: 1.5rem 0 0 0;
+	font-weight: bold;
+}
+
+.cardTextCharacter {
+	font-size: var(--text-sm);
+	margin-bottom: auto;
+}

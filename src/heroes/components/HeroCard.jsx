@@ -16,7 +16,7 @@ const HeroCard = ({ id, superhero, alterEgo, firstAppearance }) => {
 				<small className={`${style.cardText} ${style.textMuted}`}>
 					{firstAppearance}
 				</small>
-				<Link to={'/hero'} className={style.link}>
+				<Link to={`/hero/${id}`} className={style.link}>
 					Más...
 				</Link>
 			</div>
